@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <form action="/form" method="GET">
+    
+   <legend>Your face</legend>
+  <label> Your Image:</label><input type="file" ng-model="second.image" name="image" required><br>
+
+   
+       <legend>Your General Details</legend>
+       <label>firstName:<input type="text" ng-model="second.firstname" name="firstname" required /><br></label>
+       <label>lastName:<input type="text" ng-model="second.lastname" name="lastname" required /><br></label>              
+
+<label>   <bR>Age:</label> <input type="number" name="age" required />
+  <label>    <br>Date-of-birth:</label> <input type="date" name="dob" />
+       <label><br>state</label> <input type="text" id="wow" name="state" ><br>
+       <label> proof of identity:</label><input type="file" name="proof" required><br>
+   <legend>car Information</legend>
+   <label>company:<input type="text" required name="company" /><br></label>
+   <label>carname:<input type="text" required  name="carname"><br></label>
+
+
+<legend>Your Contact Information</legend>
+<label>Email:</label><input type="email" required  name="email"/>
+<label><br>Mobile:</label><input type="tel"required name="mobile">
+<label><br>address:</label><input type="text" required name="address"> 
+
+
+    <legend>Car-paper</legend>
+     <label>Challan receipt  :</label><input type="file" name="challan" name="challen" required><br>
+     <label>affidavit :</label><input type="file" name="affid" name="affidavit" required><br>
+     <label>engine no. :</label><input type="file" name="engine" required><br>      
+<button ng-href="/tests">submit</button>
+</form>
+ </div>

@@ -1,0 +1,68 @@
+<div class="container back">
+<div class="row">
+    <div class="col-xs-6">
+
+
+        <div class="card">
+            <div class="card-header">
+                    LOGIN PAGE  
+            </div>    
+     <form >
+
+    USERNAME<input type="text" placeholder="username" ng-model="first.user" ><br>
+    PASSWORD<input type="password" placeholder="password" ng-model="first.password" ><br>
+    <button class="btn btn-primary"> <a ng-if="true" href="#!/form" ng-click="first.check()" >submit</a></button>  
+    </form>
+    </div>
+</div>
+  
+ 
+<hr>
+   <div class="col-xs-6">
+
+     <!-- First Name : <input type="text"> <br>
+     Last Name : <input type="text"> <br>
+     Age : <input type="text"> <br>
+     Gender : <input type="text"> <br>
+     Mobile No. <input type="text"> <br> -->
+
+
+     <div class="card text-center">
+         <div class="card-header">
+           Sign up
+           <ul class="nav nav-tabs card-header-tabs">
+             <li class="nav-item">
+               <a class="nav-link active" href="#!/home">Sign UP</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" data-toggle="tab" href="#!/signup">Info</a>
+             </li>
+             
+           </ul>
+         </div>
+         <form action="/home" method="GET">
+         <div class="card-body">
+             <div class="tab-content">
+                 <!-- <div class="tab-pane active container" id="home">...</div> -->
+                     First Name &nbsp;<input type="text" name="firstname"> <br>
+                     Last Name&nbsp;&nbsp;<input type="text" name="lastname"> <br>
+                     Age &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age"> <br>
+                     Gender &nbsp;&nbsp;<input type="text" name="gender"><br>
+                     Mobile no.&nbsp;<input type="text" name="mobile"><br>
+                     Address &nbsp;&nbsp;&nbsp;<input type="text" name="address"><br>
+                     Username &nbsp;&nbsp;&nbsp;<input type="text" name="username" ><br>
+                     Password &nbsp;&nbsp;&nbsp;<input type="password" name="password"><br>
+
+                     <button type="submit" ng-href="/home" ng-click="first.alert()" class="btn btn-primary">submit</button>
+                 <div class="tab-pane container" id="info">...kednjkend</div>
+                 <div class="tab-pane container" id="dis">...</div>
+                 
+               </div>
+         </div>
+         </form>
+       </div>
+
+
+   </div>      <!-- col 2 -->
+ </div>       <!-- row -->
+</div>              <!--    container -->
